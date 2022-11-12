@@ -3,9 +3,19 @@
 }
 
 .hw {
-
 }
 
 .hwTitle {
+    border-bottom: solid 1px #D9D9D9;
+    margin-top: 107px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }

@@ -1,31 +1,70 @@
 .message {
-
 }
-
 .imageAndText {
-
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 0px;
+    padding-right: 70px;
 }
-
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    float: right;
 }
-
 .text {
-
+    position: relative;
+    width: max-content;
+    background-color: #0066CC;
+    margin-right: 1%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 1px 2px 0px #1D21261A;
 }
-
 .text:after {
-
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(39px at top right, transparent 50%, rgba(0, 102, 204, 1) 0) no-repeat right bottom;
 }
-
 .name {
-
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+    margin: 7px 13px 3px 5px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 }
-
 .messageText {
-
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FFFFFF;
+    margin-left: 13px;
+    margin-bottom: 8px;
+    margin-right: 13px;
 }
-
 .time {
-
+    display: flex;
+    align-items: flex-end;
+    margin-right: 81px;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0em;
 }

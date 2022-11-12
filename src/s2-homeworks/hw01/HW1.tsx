@@ -3,7 +3,8 @@ import Message from './message/Message'
 import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
-import avatar from './avatar.png'
+import avatar from './Sasha_Gray.jpg'
+import logorounded from './logorounded.png'
 
 /*
 * 1 - описать тип MessageType
@@ -13,18 +14,34 @@ import avatar from './avatar.png'
 * 5 - сделать стили в соответствии с дизайном
 * */
 
+type HwUser ={
+    avatar: string;
+    name: string
+}
+
+export type InnerMessageType = {
+    text: string
+    time: string
+    id: number
+}
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type MessageType = {
+    id: number
+    user: HwUser
+    message: InnerMessageType
+}
+
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        avatar: logorounded, // можно менять
+        name: 'Max',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        id: 0,
+        text: 'Hello, you didn’t do anything and rested all day, how are you?', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -32,10 +49,11 @@ export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Sasha', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
+        id:1,
+        text: 'Good day honey. Missing you so much', // можно менять
         time: '22:00', // можно менять
     },
 }

@@ -8,13 +8,18 @@
 }
 
 .superInput {
+    background-color: #cc9c00;
+    color: deeppink;
 }
 
 .errorInput {
+    background-color: red;
+    color: blue;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    background-color: #E0D8F0;
 }

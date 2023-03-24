@@ -3,8 +3,8 @@ import Message from './message/Message'
 import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
-import avatar from './Sasha_Gray.jpg'
-import logorounded from './logorounded.png'
+import avatar from './avatar.png'
+import Sasha_Gray from './Sasha_Gray.jpg'
 
 /*
 * 1 - описать тип MessageType
@@ -14,46 +14,43 @@ import logorounded from './logorounded.png'
 * 5 - сделать стили в соответствии с дизайном
 * */
 
-type HwUser ={
-    avatar: string;
+export type UserType = {
+    avatar: string
     name: string
 }
 
-export type InnerMessageType = {
+export type TextMessageType = {
     text: string
     time: string
-    id: number
 }
+
 // нужно создать правильный тип вместо any
 export type MessageType = {
     id: number
-    user: HwUser
-    message: InnerMessageType
+    user: UserType
+    message: TextMessageType
 }
-
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: logorounded, // можно менять
+        avatar: avatar, // можно менять
         name: 'Max',  // можно менять
     },
     message: {
-        id: 0,
-        text: 'Hello, you didn’t do anything and rested all day, how are you?', // можно менять
+        text: 'bla bla bla', // можно менять
         time: '22:00', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
-        avatar: avatar, // можно менять
+        avatar: Sasha_Gray , // можно менять
         name: 'Sasha', // можно менять
     },
     message: {
-        id:1,
-        text: 'Good day honey. Missing you so much', // можно менять
+        text: 'Enjoy yourself', // можно менять
         time: '22:00', // можно менять
     },
 }

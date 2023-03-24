@@ -1,6 +1,9 @@
 import React, { FC, ReactNode, useEffect, useState } from 'react'
 import { Header } from '../header/Header'
 import { Sidebar } from '../sidebar/Sidebar'
+import PreJunior from "../pages/PreJunior";
+import JuniorPlus from "../pages/JuniorPlus";
+import Junior from "../pages/Junior";
 
 type PropsType = {
     children: ReactNode
@@ -22,7 +25,10 @@ export const Layout: FC<PropsType> = ({ children }) => {
             <Header handleOpen={handleOpen} />
             <div>
                 {/*страницы*/}
-                {children}
+                {<PreJunior/>}
+                {<Junior/>}
+                {<JuniorPlus />}
+                {/*{children}*/}
             </div>
         </>
     )

@@ -1,16 +1,31 @@
 .button {
+    width: 200px;
+    font-size: x-large;
+    border: solid 2px black ;
+    border-radius: 10px;
+    margin: 3% 5%;
+    padding: 3% 3% 6% 6%;
+    cursor: pointer;
 }
 
 .disabled {
+    background-color: lightgrey;
+    color: #f2f2f2;
+    cursor: auto;
 }
 
 .secondary {
+    background-color: #FA6F32;
+    color: lavender;
 }
 
 .default {
+    background-color: #ffffff;
+    color: blue;
 }
-
 .red {
+    background-color: lavender;
+    color: #FA6F32;
 }
 
 .default:hover {

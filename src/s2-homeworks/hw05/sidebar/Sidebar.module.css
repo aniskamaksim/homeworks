@@ -1,25 +1,40 @@
 .sidebar {
+    background-color: #0d606f;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
+
 .sidebar.open {
+   background-color: #BCD77C;
 }
 
 .background {
+    opacity: 0.8;
+    background-color: #00cc22;
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: red;
 }
 
 .nav a {
 }
 
 .nav a:hover {
+    color: #6bade6;
 }
 
 .nav a.active {
+    color: #BCD77C;
 }
 .close {
 }
 
 .close img {
+    float: right;
 }

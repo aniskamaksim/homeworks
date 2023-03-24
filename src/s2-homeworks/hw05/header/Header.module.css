@@ -1,7 +1,17 @@
 .burgerMenuIcon {
+    width: 100px;
+    height: 100px;
+}
+.img__burger_div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .header {
+    width: 100%;
+background-color: #E0D8F0;
 }
 
 .header h1 {

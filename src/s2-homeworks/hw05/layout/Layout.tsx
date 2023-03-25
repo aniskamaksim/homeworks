@@ -25,10 +25,10 @@ export const Layout: FC<PropsType> = ({ children }) => {
             <Header handleOpen={handleOpen} />
             <div>
                 {/*страницы*/}
-                {<PreJunior/>}
-                {<Junior/>}
-                {<JuniorPlus />}
-                {/*{children}*/}
+                {/*{<PreJunior/>}*/}
+                {/*{<Junior/>}*/}
+                {/*{<JuniorPlus />}*/}
+                {children}
             </div>
         </>
     )

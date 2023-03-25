@@ -12,6 +12,7 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
     // hw5-menu изначально отсутствует, при нажатии на бургер - появляется, при повторном нажатии исчезает
     const location = useLocation()
     const currentPath = location.pathname
+    console.log(currentPath)
 
     const pageName =
         currentPath === PATH.PRE_JUNIOR
@@ -24,13 +25,14 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
     return (
         <>
             <div id={'hw5-header'} className={s.header}>
-                <div className={'img__burger_div'}><img
-                    src={burgerIcon}
-                    id={'hw5-burger-menu'}
-                    className={s.burgerMenuIcon}
-                    onClick={handleOpen}
-                    alt={'open menu'}
-                />
+                <div className={'img__burger_div'}>
+                    <img
+                        src={burgerIcon}
+                        id={'hw5-burger-menu'}
+                        className={s.burgerMenuIcon}
+                        onClick={handleOpen}
+                        alt={'open menu'}
+                    />
                 </div>
                 <h1>{pageName}</h1>
             </div>

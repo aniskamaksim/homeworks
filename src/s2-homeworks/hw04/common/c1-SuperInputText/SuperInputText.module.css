@@ -8,8 +8,10 @@
 }
 
 .superInput {
-    background-color: #cc9c00;
+    width: 20em;
+    background-color: inherit;
     color: deeppink;
+    font-size: x-large;
 }
 
 .errorInput {

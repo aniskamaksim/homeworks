@@ -3,6 +3,9 @@
 }
 
 .hw {
+    display: flex;
+    width: 100%;
+    padding: 1em 1em;
 }
 
 .hwTitle {

@@ -1,10 +1,14 @@
 .spanBlock {
 }
+.spanBlock img {
+    width: 50px;
+}
 
 .span {
 }
 
 .input {
+
 }
 
 .pen {

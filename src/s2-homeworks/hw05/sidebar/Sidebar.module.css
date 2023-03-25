@@ -1,14 +1,4 @@
 .sidebar {
-    display: none;
-    width: 10%;
-    background-color: #0d606f;
-    min-height: 100%;
-    transform: translate(-320px);
-    transition-duration: 3000ms;
-}
-
-
-.sidebar.open {
     background-color: #f2f2f2;
     display: flex;
     position: absolute;
@@ -17,9 +7,13 @@
     min-height: 100%;
     z-index: 999;
     opacity: 1;
+    transform: translate(-620px);
+    transition-duration: 3000ms;
+}
+
+.sidebar.open {
     transform: translate(0px);
     transition-duration: 3000ms;
-
 }
 
 .background {

@@ -9,7 +9,13 @@
 }
 
 .label {
+    color: purple;
+    font-size: large;
 }
 
 .options {
+}
+.span {
+    margin-left: 1em;
+    font-size: large;
 }

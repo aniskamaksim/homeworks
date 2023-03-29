@@ -1,23 +1,47 @@
 .item {
 }
+.itemName {
+    text-align: center;
+}
+.itemAge {
+    text-align: right;
+    padding-right: 2em;
+}
 
 .item:last-of-type {
 }
 
 .users {
+    margin-left: 3em;
+    background-color: #BCD77C;
+    font-size: large;
 }
 
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .container {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .thead {
+    width: 80%;
+    border: mediumpurple 1px solid;
 }
 
 .nameCol {
+    text-align: center;
+    font-size: large;
+    border: mediumpurple 1px solid;
+    background-color: lightcyan;
 }
-
 .ageCol {
+    text-align: center;
+    font-size: large;
+    border: mediumpurple 1px solid;
+    background-color: lightcyan;
 }

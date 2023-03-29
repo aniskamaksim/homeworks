@@ -1,9 +1,15 @@
 .select {
+    width: 100%;
+    background-color: linen;
+    font-size: large;
+    margin-left: 3em;
 }
 
 .select:focus {
+    background-color: lightcyan;
 }
 
 
 .option:hover {
+    background-color: mediumpurple;
 }

@@ -1,10 +1,12 @@
 .button {
+    text-align: center;
     width: 200px;
+    height: max-content;
     font-size: x-large;
     border: solid 2px black ;
     border-radius: 10px;
     margin: 3% 5%;
-    padding: 3% 3% 6% 6%;
+    /*padding: 3% 3% 6% 6%;*/
     cursor: pointer;
 }
 

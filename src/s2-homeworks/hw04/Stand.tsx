@@ -11,7 +11,6 @@ const Stand = () => {
 
     const [stateForAllCheckboxes, setChecked] = useState<boolean>(false)
 
-    console.log(stateForAllCheckboxes)
     return (
         <div id={'hw4-stand'} className={s.stand}>
             <div className={s.inputs}>

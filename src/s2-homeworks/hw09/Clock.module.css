@@ -1,7 +1,11 @@
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 .clock {
+    margin-left: 2.5em;
+    font-size: x-large;
 }
 
 .watch {
@@ -11,4 +15,11 @@
 }
 
 .more {
+}
+.stringBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+    justify-content: flex-start;
+
 }

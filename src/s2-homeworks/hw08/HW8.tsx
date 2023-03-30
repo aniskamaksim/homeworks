@@ -46,6 +46,7 @@ const sortDown = () => {
     ) // в обратном порядке a.name < b.name}
     setCurrentSort('down')
 }
+// check
 const check18 = () => {
     setPeople(
         homeWorkReducer(initialPeople, {type: 'check', payload: 18})

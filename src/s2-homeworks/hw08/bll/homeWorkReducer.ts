@@ -1,9 +1,8 @@
 import {UserType} from '../HW8'
-//TODO: доделать SORT-BY-AGE логику, добавить кнопку и отрисовать
 type ActionType =
     | { type: 'sort'; payload: 'up' | 'down' }
     | { type: 'check'; payload: number }
-    // | { type: 'SORT-BY-AGE'; payload: 'up' | 'down'}
+    | { type: 'SORT-BY-AGE'; payload: 'up' | 'down'}
 
 export const homeWorkReducer = (state: UserType[], action: ActionType): UserType[] => { // need to fix any
     switch (action.type) {
@@ -20,7 +19,16 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
         case 'check': {
             return state.filter(e=>e.age >= 18)
         }
+        case "SORT-BY-AGE": {
+            let copyPeople = state.map(e => ({...e}));
+            if(action.payload === "up") {
+                return copyPeople.sort((a,b)=>{return a.age - b.age});
+            } else if (action.payload === "down") {
+                return copyPeople.sort((a, b) => {return b.age - a.age});
+            } else return state;
+        }
         default:
             return state
     }
 }
+

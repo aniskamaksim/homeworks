@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState, MouseEvent} from 'react'
+import React, {useState} from 'react'
 import s from './HW11.module.css'
 import s2 from '../../s1-main/App.module.css'
 import {restoreState, saveState} from '../hw06/localStorage/localStorage'
@@ -14,6 +14,9 @@ function HW11() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 37))
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 73))
+
+    saveState("222", value2)
+    saveState("111", value1)
 
     const change = (event: React.SyntheticEvent | Event, value: number | number[]) => {
         if(Array.isArray(value)){

@@ -53,6 +53,18 @@ const check18 = () => {
     ) // совершеннолетние
     setCurrentSort('18')
 }
+const sortByAgeUp = ()=>{
+        setPeople(
+            homeWorkReducer(initialPeople, {type: "SORT-BY-AGE", payload: "up"})
+        )
+    setCurrentSort("ageUp")
+}
+const sortByAgeDown = ()=>{
+        setPeople(
+            homeWorkReducer(initialPeople, {type: "SORT-BY-AGE", payload: "down"})
+        )
+    setCurrentSort("ageDown")
+}
 
 return (
     <div id={'hw3'}>
@@ -79,6 +91,20 @@ return (
                         xType={currentSort === '18' ? '' : 'secondary'}
                     >
                         Check 18+
+                    </SuperButton>
+                    <SuperButton
+                        id={'hw8-button-Age-Up'}
+                        onClick={sortByAgeUp}
+                        xType={currentSort === 'ageUp' ? '' : 'secondary'}
+                    >
+                        Age Up
+                    </SuperButton>
+                    <SuperButton
+                        id={'hw8-button-Age-Up'}
+                        onClick={sortByAgeDown}
+                        xType={currentSort === 'ageDown' ? '' : 'secondary'}
+                    >
+                        Age Down
                     </SuperButton>
                 </div>
 

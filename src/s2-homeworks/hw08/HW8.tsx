@@ -107,7 +107,6 @@ return (
                         Age Down
                     </SuperButton>
                 </div>
-
                 <table id={'hw8-users'} className={s.users}>
                     <thead className={s.thead}>
                     <tr>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/homeworks/static/css/main.d47be14e.css",
-    "main.js": "/homeworks/static/js/main.35e13f8c.js",
+    "main.css": "/homeworks/static/css/main.da0e12cc.css",
+    "main.js": "/homeworks/static/js/main.d19cc7aa.js",
     "static/js/787.66cb4309.chunk.js": "/homeworks/static/js/787.66cb4309.chunk.js",
     "static/media/27-globe-gradient.gif": "/homeworks/static/media/27-globe-gradient.d119b35a06ea61ffe081.gif",
     "static/media/Sasha_Gray.jpg": "/homeworks/static/media/Sasha_Gray.479cf8bc12b1d1b3f0ad.jpg",
@@ -12,12 +12,12 @@
     "static/media/checked.svg": "/homeworks/static/media/checked.0b6a1bcf5d417ff0a947.svg",
     "index.html": "/homeworks/index.html",
     "static/media/burger.svg": "/homeworks/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
-    "main.d47be14e.css.map": "/homeworks/static/css/main.d47be14e.css.map",
-    "main.35e13f8c.js.map": "/homeworks/static/js/main.35e13f8c.js.map",
+    "main.da0e12cc.css.map": "/homeworks/static/css/main.da0e12cc.css.map",
+    "main.d19cc7aa.js.map": "/homeworks/static/js/main.d19cc7aa.js.map",
     "787.66cb4309.chunk.js.map": "/homeworks/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d47be14e.css",
-    "static/js/main.35e13f8c.js"
+    "static/css/main.da0e12cc.css",
+    "static/js/main.d19cc7aa.js"
   ]
 }

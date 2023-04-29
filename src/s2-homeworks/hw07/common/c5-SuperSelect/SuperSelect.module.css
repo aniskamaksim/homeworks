@@ -1,8 +1,10 @@
 .select {
-    width: 60%;
+    width: 171px;
+    height: 36px;
     background-color: linen;
     font-size: large;
     margin-left: 3em;
+    border-radius: 5px;
 }
 
 .select:focus {

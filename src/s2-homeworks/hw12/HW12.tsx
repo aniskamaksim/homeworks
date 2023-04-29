@@ -25,7 +25,8 @@ const themes: themesType[] = [
 const HW12 = () => {
     const dispatch = useDispatch();
     // взять ид темы из редакса
-    const themeId = useSelector<AppStoreType, number>((state)=>state.theme.id)
+    const themeId = useSelector<AppStoreType, number>((state)=>state.theme.themeId)
+    console.log("id from app = " + themeId)
 
     const change = (id: number) => { // дописать функцию
         dispatch(changeThemeId(id))

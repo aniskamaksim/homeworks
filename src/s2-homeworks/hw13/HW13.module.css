@@ -1,19 +1,29 @@
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 .responseContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .imageContainer {
 }
 
 .image {
+    width: 500px;
 }
 
 .textContainer{
+    font-size: medium;
 }
 
 .code {
+    font-size: x-large;
+    margin-bottom: 2em;
+    font-weight: bold;
 }
 
 .text {

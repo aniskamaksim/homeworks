@@ -35,12 +35,13 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
               </option>
           ))
         : [] // map options with key
-    //TODO: в селект приходит название режима, а не айди
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
+        console.log("changeEventId = " + e.currentTarget.value)
        onChangeOption&& onChangeOption(+(e.currentTarget.value))
     }
 
     const finalSelectClassName = s.select + (className ? ' ' + className : '')
+    // 's.select_1234 s.selects_4444 '
 
     return (
         <select

@@ -36,26 +36,26 @@ const HW13 = () => {
                 if(res.status === 200) {
                     setCode(`code ${res.status}`)
                     setImage(success200)
-                    setText('Good request!')
-                    setInfo('')
+                    setText('...всё ок)')
+                    setInfo('код 200 - обычно означает что скорее всего всё ок)')
                 }
             })
             .catch((e) => {
                 if(e.response.status === 400) {
                     setCode(`code ${e.response.status}`)
                     setImage(error400)
-                    setText('Bad request!')
-                    setInfo('')
+                    setText('Ты не отправил success в body вообще!')
+                    setInfo('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
                 } else if (e.response.status === 500) {
                     setCode(`code ${e.response.status}`)
                     setImage(error500)
-                    setText('Smthng going wrong.')
-                    setInfo('')
+                    setText('эмитация ошибки на сервере')
+                    setInfo('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
                 }else {
                     setCode(`code ${e.response.status}`)
                     setImage(errorUnknown)
-                    setText(`Our specialist in a helmet and with a laptop is already working on the creation of the site ${url}. Please try again your request a little later`)
-                    setInfo('')
+                    setText("Error")
+                    setInfo('Error')
                 }
             })
     }
